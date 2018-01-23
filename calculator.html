@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Love Calulator</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="icon" href="images/heart-icon.ico" type="image/gif">
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="calculator.js"></script>
+</head>
+<body>
+	<div class="centerAligned splash">
+		<img class="splashImage" src="images/heart.gif">
+	</div>
+	<div class="centerAligned mainScreen">
+		<div class="information">
+			<p class="IntroTitle">Welcome to the Love Dungeon</p>
+			<p class="IntroInfo">The Love lord has woke up and is waiting for your request.<br> &nbsp &nbsp &nbsp Name can reveal a lot about a person and that is what Love lord knows very well. Reveal the names and let the lord and his cupids tell your compatibility. <strong>Enter the names and press the heart button.</strong></p>
+		</div>
+		<div class="submissionBox">
+			<div class="inputGroup form-group">
+				<label>Partner 1</label>
+				<input id="partner1" class="form-control">
+				<label>Partner 2</label>
+				<input id="partner2" class="form-control">
+				<img onclick="calculate()" class="submitButton" src="images/heart-button.png">
+			</div>
+			<div id="incorrectInput"></div>
+		</div>
+		<p class="disclaimer"><strong>Disclaimer:</strong> Niether the Developer nor the Love lord is responsible for any post calculation crisis.</p>
+	</div>
+	<div class="resultScreen">
+		<div class="loadingComments">
+			<p class="comments"><span id="comment1" >The Cupids are on their way to meet the lord with your names...</span></p>
+			<p class="comments"><span id="comment2" >Lord is Calculating your love percentage...</span></p>
+			<p class="comments"><span id="comment3" >Finally, the lord has analyzed your love...</span></p>
+			<p class="comments"><span id="comment4" >Your results are with the cupids and they are on their way to display your fate...</span></p>
+		</div>
+		<div class="finalResult">
+			<p>Your Love Percentage is...</p>
+			<span class="resultPercentage"><span id="result"></span>%</span>
+			<span id="finalAdvice" class="finalAdvice"></span>
+			<div class="calculateButton" onclick="calculatorRestart()">Calculate</div>
+		</div>
+		<div></div>
+	</div>
+</body>
+</html>

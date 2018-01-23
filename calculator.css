@@ -1,0 +1,151 @@
+body{
+	margin:0px;
+}
+
+.splash{
+	background-color: #ff99ff;
+    height: 100vh;
+	display: flex;
+    
+}
+
+.splashImage{
+	width: 250px;
+    height: 250px;
+}
+
+.mainScreen{
+	display: none;
+	background: url('images/heart-background.png');
+	min-height: 100vh;
+	background-size: cover;
+	flex-direction: column;
+
+}
+
+.calculateButton{
+	width: 50px;
+}
+
+.content{
+	display: flex;
+	align-items: center;
+}
+
+.partner1 , .partner2{
+	margin:10px;
+}
+
+.centerAligned{
+	justify-content: center;
+    align-items: center;
+}
+
+.information{
+	width: 100%;
+	flex: 1;
+}
+
+.IntroTitle{
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+    margin-top: 20px;
+    color: #f00;
+}
+
+.IntroInfo{
+	padding: 0px 15px;
+}
+
+.submissionBox{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex: 4;
+	justify-content: center;
+	align-items: center;
+}
+
+.inputGroup{
+	width: 30%;
+}
+
+.form-control{
+	margin-bottom: 10px;
+}
+
+.submitButton{
+	width: 20%;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+.disclaimer{
+	font-size: 15px;
+	margin: 10px 15px;
+}
+
+#incorrectInput{
+	width: 80%;
+    height: 8em;
+    text-align: center;
+    color: #f00;
+}
+
+.resultScreen{
+	display: none;
+	height: 100vh;
+	background-color: #ffccff;
+}
+
+.loadingComments{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.comments{
+	flex: 1;
+    margin: 15px;
+    color: #f00;
+}
+
+.finalResult{
+	display: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.resultPercentage{
+	font-size: 50px;
+}
+
+.calculateButton{
+	width: auto;
+	margin-top: 30px;
+    border: 2px solid #ff99ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.finalAdvice{
+	margin: 10px;
+    font-size: 15px;
+}
+
+#comment1, #comment2, #comment3, #comment4{
+	display: none;
+} 
+
+@media only screen and (max-width: 600px) {
+
+	.inputGroup{
+		width: 80%;
+	}
+
+}
